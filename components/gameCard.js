@@ -18,7 +18,7 @@ export default function GameCard({ game }) {
             />
             <LinearGradient
                 colors={['transparent', 'rgba(0,0,0,0.6)']}
-                className="absolute p-4 h-full w-full bottom-0"
+                className="absolute p-4 h-full w-full flex justify-between rounded-3xl"
                 style={{ borderRadius: 24 }}
             >
                 <View className="flex-row justify-end">
@@ -32,18 +32,6 @@ export default function GameCard({ game }) {
                 </View>
 
                 <View className="gap-y-1">
-                    {/* <Rating
-                        type="custom"
-                        ratingCount={5}
-                        imageSize={15}
-                        startingValue={game.stars}
-                        // readonly
-                        ratingColor='#3498db'
-                        showRating
-                        ratingBackgroundColor='#c8c7c8'
-                        tintColor='none'
-                        style={{ width: 90 }}
-                    /> */}
                     <Text className="text-xl font-bold text-gray-300">
                         {game.title}
                     </Text>
